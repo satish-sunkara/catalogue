@@ -31,6 +31,13 @@ pipeline {
                 }
             }
         }
+        stage('Build version') {
+            steps {
+                sh """
+                    npm install 
+                """
+            }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'
