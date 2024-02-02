@@ -31,7 +31,7 @@ pipeline {
                 }
             }
         }
-        stage('Build version') {
+        stage('code deployment') {
             steps {
                 sh """
                     npm install 
